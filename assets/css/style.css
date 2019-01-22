@@ -1,0 +1,17 @@
+#train-schedule-table th,
+td{
+    display: inline-block;
+    width: 20%;
+}
+.jumbotron{
+    background-color: lightskyblue;
+    color: azure;
+}
+#add-header{
+    background-color: lightskyblue;
+    font-weight: bold;
+}
+#Current-Train-Schedule{
+    font-weight: bold;
+    background-color: lightskyblue;
+}
