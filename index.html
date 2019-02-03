@@ -9,10 +9,8 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
-    <link rel="stylesheet"  href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!--firebase reference-->
-    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
-    <!--javascript-->
 </head>
 
 <body>
@@ -33,7 +31,7 @@
                 <div class="card header" id="Current-Train-Schedule">Current Train Schedule</div>
                 <table class="table table-sm table-hover" id='train-schedule-table'>
                     <thead>
-                        <tr>
+                        <tr id='table-row'>
                             <th scope="col">Train Name</th>
                             <th scope="col">Destination</th>
                             <th scope="col">Frequency(min)</th>
@@ -43,13 +41,13 @@
                     </thead>
                     <!--This is where data will show-->
                     <tbody>
-                        <tr>
+                        <!-- <tr>
                             <td id='tname'></td>
                             <td id='tdestination'></td>
                             <td id='nextArival'></td>
                             <td id='frequency'></td>
                             <td id='minuteAway'></td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
             </div>
@@ -93,12 +91,16 @@
 
 
     </div>
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
 
     <!--jquery CDN-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap CDN-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+    <!--moment.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.js"></script>
+
     <script src="assets/javascript/app.js"></script>
 
 </body>
